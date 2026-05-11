@@ -1,12 +1,5 @@
 """
-SILO (simplified single-file implementation)
-
-Educational from-scratch implementation of "SILO: Solving Inverse Problems
-with Latent Operators" (Raphaeli, Man, Elad - ICCV 2025, arXiv:2501.11746).
-
-This is NOT a port of the official repo. It is a clean-room rewrite of the
-paper's Algorithm 1 in one file, designed to be readable and hackable.
-
+SILO 
 Algorithm reproduced:
     z_T ~ N(0, I)
     w   = clamp(E(y), -4, 4)
@@ -23,10 +16,7 @@ clean latents to the latents of their degraded counterparts. Once trained,
 the autoencoder is used only at the very start (encode y) and very end
 (decode z_0), which is the key efficiency / quality win in the paper.
 
-USAGE (Colab):
-    !pip install -q diffusers==0.30.0 transformers accelerate einops
-
-    # Step A - train the operator (~30 min on T4 with 2000 steps)
+    # Step A - train the operator 
     !python silo.py --mode train --task inpaint \
         --train_dir /content/ffhq_images --train_steps 2000
 
@@ -34,19 +24,6 @@ USAGE (Colab):
     !python silo.py --mode sample --task inpaint \
         --test_image /content/ffhq_images/00001.png \
         --sample_steps 500 --eta 1.0
-
-    # Or do both in one shot:
-    !python silo.py --mode train_then_sample --task inpaint \
-        --train_dir /content/ffhq_images
-
-CAVEATS:
-  * Won't match paper numbers - their operator is bigger and trained much
-    longer. Expect "you can clearly see SILO working" quality, not SOTA.
-  * Backprop through SD UNet at 512px is memory-heavy. T4 (16GB) just fits;
-    if you OOM, drop --image_size to 384 or 256.
-  * The "sr" task here uses bicubic-down-then-up (so latent shapes match).
-    The paper's true SR uses smaller measurements and a shape-changing
-    operator; that's a worthwhile extension for you to add.
 """
 
 import argparse
