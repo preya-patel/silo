@@ -2,7 +2,6 @@
 
 CS/ECE 8690 Computer Vision — Final Project  
 **Preya Patel and Mithilesh Gollapelli**  
-University of Missouri-Columbia
 
 ## What's in this folder
 
@@ -55,8 +54,6 @@ Swap `--task inpaint` for `--task gauss_blur` to run the deblurring task, and `s
 ## Hardware and runtime
 
 - GPU: Google Colab A100
-- Training: ~30 minutes per task (2000 steps, batch size 4, 512×512)
-- Evaluation (5 images): ~25 minutes per task at 500 sampling steps
 
 ## Headline results
 
