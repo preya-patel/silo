@@ -29,7 +29,7 @@ Under identical training and sampling conditions on FFHQ, SILO+ outperforms the 
 
 ## Reproducing the results
 
-We ran everything on Google Colab with a T4 GPU. The cleanest path to reproduce is to open `train_and_eval.ipynb` in Colab and run cells top to bottom. The notebook handles dependency installation, drive mounting, training, evaluation, and figure generation.
+We ran everything on Google Colab with a A100 GPU. The cleanest path to reproduce is to open `train_and_eval.ipynb` in Colab and run cells top to bottom. The notebook handles dependency installation, drive mounting, training, evaluation, and figure generation.
 
 For command-line use:
 
