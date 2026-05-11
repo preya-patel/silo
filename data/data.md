@@ -23,7 +23,7 @@ We obtained FFHQ from a Kaggle mirror. To reproduce our training:
 
 ## Image format
 
-FFHQ images are 512x512 RGB PNGs. Our pipeline resizes them to
+FFHQ images are 1024x1024 RGB PNGs. Our pipeline resizes them to
 512x512 during training and evaluation.
 
 ## Test images
