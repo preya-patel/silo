@@ -48,7 +48,7 @@ For command-line use:
        --out_dir results/silo_v2_eval_inpaint
 ```
 
-3. To retrain from scratch, replace `--mode eval` with `--mode train` and point `--train_dir` at your FFHQ training images (we used the first 1000 of FFHQ). Training takes about 30 minutes per task on T4.
+3. To retrain from scratch, replace `--mode eval` with `--mode train` and point `--train_dir` at your FFHQ training images (we used the first 1000 of FFHQ). 
 
 Swap `--task inpaint` for `--task gauss_blur` to run the deblurring task, and `silo_v2.py` for `silo_v1.py` to run the baseline.
 
