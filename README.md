@@ -14,8 +14,8 @@ CS/ECE 8690 Computer Vision — Final Project
 | `code/silo_v2.py` | SILO+ implementation (multi-scale + spatial attention) |
 | `code/requirements.txt` | Python dependencies |
 | `checkpoints/` | Trained operator weights for both tasks and both methods |
-| `data/test_images/` | 5 FFHQ test images used for evaluation |
-| `results/` | Reconstruction grids, bar charts, training curves, and metric CSVs |
+| `data/` | Instructions on downloading the used data and test images used for evaluation |
+| `results/` | Reconstruction grids, bar charts, training curves and metric CSVs |
 
 ## What we built
 
