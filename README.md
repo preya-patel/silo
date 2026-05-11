@@ -69,10 +69,6 @@ Swap `--task inpaint` for `--task gauss_blur` to run the deblurring task, and `s
 
 SILO+ wins on every metric on both tasks. The largest gains are perceptual: 48% LPIPS reduction on inpainting and 47% LPIPS reduction on deblurring relative to the degraded measurement.
 
-## Team contributions
-
-Both authors contributed equally. Preya set up the training and evaluation pipeline on Colab, implemented the SILO baseline, and produced the quantitative results and plots. Mithilesh designed and built the SILO+ operator with the multi-scale block and spatial attention, handled sampling-side tuning, and prepared the qualitative reconstruction grids. The report and slides were written together.
-
 ## Acknowledgments
 
 Built on top of the SILO algorithm (Raphaeli et al., ICCV 2025) and the Hugging Face Diffusers library. Stable Diffusion weights from the Realistic Vision v5.1 checkpoint on Hugging Face Hub.
