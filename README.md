@@ -7,7 +7,7 @@ CS/ECE 8690 Computer Vision — Final Project
 
 | Item | Description |
 |---|---|
-| `REPORT.pdf` | Full paper in IEEE format |
+| `REPORT.pdf` | Report describing our entire work |
 | `PRESENTATION.pdf` | Slide deck used for the in-class presentation |
 | `train_and_eval.ipynb` | Colab notebook that runs the full pipeline end-to-end |
 | `code/silo_v1.py` | SILO baseline implementation |
