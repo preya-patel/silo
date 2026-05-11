@@ -11,7 +11,7 @@ University of Missouri-Columbia
 | `REPORT.pdf` | Full paper in IEEE format |
 | `PRESENTATION.pdf` | Slide deck used for the in-class presentation |
 | `train_and_eval.ipynb` | Colab notebook that runs the full pipeline end-to-end |
-| `code/silo_v1.py` | SILO baseline implementation (vanilla CNN operator) |
+| `code/silo_v1.py` | SILO baseline implementation |
 | `code/silo_v2.py` | SILO+ implementation (multi-scale + spatial attention) |
 | `code/requirements.txt` | Python dependencies |
 | `checkpoints/` | Trained operator weights for both tasks and both methods |
